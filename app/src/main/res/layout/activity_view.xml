@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/book_details" />
+
+    <LinearLayout style="@style/LinearLayout">
+
+        <TextView
+            style="@style/BookTitleTextStyle"
+            android:text="@string/book_name" />
+
+        <TextView
+            android:id="@+id/book_name_text"
+            style="@style/BookTitleTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout">
+
+        <TextView
+            style="@style/BookTitleTextStyle"
+            android:text="@string/book_price" />
+
+        <TextView
+            android:id="@+id/book_price_text"
+            style="@style/BookTitleTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout">
+
+        <TextView
+            style="@style/BookTitleTextStyle"
+            android:text="@string/book_quantity" />
+
+        <Button
+            android:id="@+id/increase_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"
+            android:text="@string/plus_sign"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/book_quantity_text"
+            style="@style/BookTitleTextStyle" />
+
+        <Button
+            android:id="@+id/decrease_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"
+            android:text="@string/minus_sign"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout">
+
+        <TextView
+            style="@style/BookTitleTextStyle"
+            android:text="@string/book_supplier_name" />
+
+        <TextView
+            android:id="@+id/book_supplier_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingRight="@dimen/padding_right" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout">
+
+        <TextView
+            style="@style/BookTitleTextStyle"
+            android:text="@string/book_supplier_phone_number" />
+
+        <TextView
+            android:id="@+id/book_supplier_phone_number_text"
+            style="@style/BookTitleTextStyle" />
+
+        <Button
+            android:id="@+id/phone_button"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
+            android:focusable="false"
+            android:paddingLeft="@dimen/padding_left" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:drawableLeft="@drawable/ic_delete_forever_black_24dp"
+        android:text="@string/delete" />
+
+</LinearLayout>

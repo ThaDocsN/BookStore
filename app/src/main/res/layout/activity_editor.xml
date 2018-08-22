@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/BookTitleTextStyle"
+        android:layout_gravity="center"
+        android:text="@string/book_editor" />
+
+    <LinearLayout style="@style/LinearLayout">
+
+        <!-- Label -->
+        <TextView
+            style="@style/BookAddTextStyle"
+            android:text="@string/book_name" />
+
+        <EditText
+            android:id="@+id/book_name_edit_text"
+            style="@style/BookAddFormStyle"
+            android:layout_marginStart="16dp"
+            android:hint="@string/book_name"
+            android:inputType="textCapWords" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout">
+        <!-- Label -->
+        <TextView
+            style="@style/BookAddTextStyle"
+            android:text="@string/book_price" />
+
+        <EditText
+            android:id="@+id/book_price_edit_text"
+            style="@style/BookAddFormStyle"
+            android:layout_marginStart="24dp"
+            android:hint="@string/book_price"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout">
+        <!-- Label -->
+        <TextView
+            style="@style/BookAddTextStyle"
+            android:text="@string/book_quantity" />
+
+        <EditText
+            android:id="@+id/book_quantity_edit_text"
+            style="@style/BookAddFormStyle"
+            android:layout_marginStart="8dp"
+            android:hint="@string/book_quantity"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout">
+        <!-- Label -->
+        <TextView
+            style="@style/BookAddTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/book_supplier_name" />
+
+        <EditText
+            android:id="@+id/supplier_name_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_weight="1"
+            android:hint="@string/book_supplier_name"
+            android:inputType="text"
+            android:paddingEnd="16dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout">
+        <!-- Label -->
+        <TextView
+            style="@style/BookAddTextStyle"
+            android:text="@string/book_supplier_phone_number" />
+
+        <EditText
+            android:id="@+id/book_supplier_phone_number_edit_text"
+            style="@style/BookAddFormStyle"
+            android:hint="@string/book_supplier_phone_number"
+            android:inputType="phone" />
+    </LinearLayout>
+</LinearLayout>

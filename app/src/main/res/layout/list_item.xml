@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout style="@style/LinearLayout">
+
+        <LinearLayout style="@style/LinearLayoutWeight">
+
+            <TextView
+                android:id="@+id/book_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size"
+                tools:text="book name" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutWeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                tools:text="book quantity" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout">
+
+        <LinearLayout style="@style/LinearLayoutWeight">
+
+            <LinearLayout style="@style/LinearLayoutWeight">
+
+                <TextView
+                    android:id="@+id/book_price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="book price" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutWeight">
+
+                <LinearLayout style="@style/LinearLayout">
+
+                    <LinearLayout style="@style/LinearLayoutWeight">
+
+                        <Button
+                            android:id="@+id/sale_button"
+                            style="@style/ListItemStyle"
+                            android:drawableLeft="@drawable/ic_shopping_cart_black_24dp"
+                            android:text="@string/btn_sale" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayoutWeight"
+                        android:layout_width="2dp"
+                        android:layout_marginLeft="@dimen/padding_right">
+
+                        <Button
+                            android:id="@+id/edit_button"
+                            style="@style/ListItemStyle"
+                            android:drawableLeft="@drawable/ic_create_black_24dp"
+                            android:text="@string/btn_edit" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
